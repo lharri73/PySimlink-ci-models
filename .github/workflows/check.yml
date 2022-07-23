@@ -1,0 +1,16 @@
+name: Verify Generated Models
+
+on: 
+  push:
+    branches: [master]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+
+      - name: Verify count
+        run: ./.github/scripts/check_number.sh
+        shell: bash
+

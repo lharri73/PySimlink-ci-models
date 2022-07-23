@@ -1,0 +1,14 @@
+raw/**/*.zip
+raw/**/*.slxc
+raw/**/*.asv
+raw/**/*.m~
+raw/**/*.mex*
+raw/**/*.mlappinstall
+raw/**/*.mltbx
+raw/**/helpsearch*/
+raw/**/slprj/
+raw/**/sccprj/
+raw/**/codegen/
+raw/**/*.autosave
+raw/**/octave-workspace
+raw/**/*_grt_rtw
