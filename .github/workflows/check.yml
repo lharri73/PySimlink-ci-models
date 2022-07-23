@@ -14,3 +14,17 @@ jobs:
         run: ./.github/scripts/check_number.sh
         shell: bash
 
+  manifest:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create manifest
+        run: ls -1 generated > generated/manifest.txt
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with: 
+          commit_message: update manifest
+          file_pattern: generated/*.txt
+
