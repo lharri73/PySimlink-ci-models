@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Create manifest
-        run: ls -1 generated > generated/manifest.txt
+        run: ls -1 generated | grep .zip > generated/manifest.txt
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with: 
