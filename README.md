@@ -29,11 +29,8 @@ Within each `.zip` file is either the following structure
 ```
 model.zip/
 ├─ data.pkl
-├─ model(.zip)/
+├─ model.zip/
 ```
-
-The model itself can either be a zip file (the one generated from Simulink) or
-can be simply a folder with the necessary file structure. 
 
 The `data.pkl` file is a pickled dictionary containing the following keys:
 - `model_length`: the number of total steps in the model. This is the result of $tFinal / step\_size$
